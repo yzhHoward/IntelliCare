@@ -1,0 +1,3 @@
+pyhealth==1.1.6
+vllm==0.4.3
+umap-learn
