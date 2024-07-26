@@ -5,6 +5,7 @@ Official implementation of IntelliCare: Improving Healthcare Analysis with Patie
 ## Data Preparation
 - MIMIC-III dataset: https://physionet.org/content/mimiciii/1.4/
 - MIMIC-IV dataset: https://physionet.org/content/mimiciv/2.2/
+- 
 You need to follow the instructions on the PhysioNet website to access the data. After downloading the data, please put the data in the `data` folder.
 
 ## LLM Preparation
