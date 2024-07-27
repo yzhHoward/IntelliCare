@@ -24,7 +24,7 @@ model_id = "../Meta-Llama-3-8B-Instruct"
 dataset = 'mimiciii'
 gpus=4
 batch_size = 32
-seed = 2 if dataset == 'mimiciii' else 1
+seed = 2
 n = 8
 n_components = 5000
 use_cluster = True

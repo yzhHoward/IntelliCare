@@ -94,7 +94,7 @@ if __name__ == "__main__":
         train_dataloader, val_dataloader, test_dataloader, node_emb, rel_emb, sample_dataset = load_dataset(args.dataset, args.task + "_finetune", sample_dataset, args.batch_size)
     else:
         train_dataset, val_dataset, test_dataset = split_by_patient(
-            sample_dataset, [0.8, 0.1, 0.1], seed=2 if args.dataset == "mimiciii" else 1
+            sample_dataset, [0.8, 0.1, 0.1], seed=2
         )
         train_dataloader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, collate_fn=collate_fn_dict, drop_last=True if args.backbone == "grasp" else False)
         val_dataloader = DataLoader(val_dataset, batch_size=args.batch_size, collate_fn=collate_fn_dict, drop_last=True if args.backbone == "grasp" else False)

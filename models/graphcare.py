@@ -40,7 +40,7 @@ def load_dataset(dataset, task, sample_dataset, batch_size):
             pickle.dump(sample_dataset, f)
         
     train_dataset, val_dataset, test_dataset = split_by_patient(
-        sample_dataset, [0.8, 0.1, 0.1], seed=2 if dataset == "mimiciii" else 1
+        sample_dataset, [0.8, 0.1, 0.1], seed=2
     )
 
     node_emb = G_tg.x
