@@ -22,7 +22,7 @@ To extract the embeddings from the LLMs, you need to download `gte-large-en-v1.5
 
 3. Extract the embeddings from the LLMs by running the `extract_embeddings.py` file.
 
-4. Train the EHR encoder. The training code is in the `train_encoder.py` folder. You can modify `--backbone` in the choices to select the model that you want to train.
+4. Train the EHR encoder. The training code is in the `train_encoder.py` folder. You can modify `--backbone` in the choices to select the model that you want to train. We put part of the data files of GraphCare we used in `resources/graphcare/`, and you need to put other files into this folder if you select [GraphCare](https://github.com/pat-jj/GraphCare) as the EHR encoder.
 
 5. Train the IntelliCare model. The training code is in the `train_intellicare.py` folder. You can modify `--backbone` to select the EHR encoder.
 
